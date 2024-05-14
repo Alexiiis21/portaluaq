@@ -79,9 +79,12 @@ export function SidebarMobile(props: SidebarMobileProps) {
                       Configuración
                     </SidebarButton>
                   </Link>
+                  <Link href='/privacidad/login'>
                   <SidebarButton size='sm' icon={LogOut} className='w-full'>
                     Cerrar Sesión
                   </SidebarButton>
+                  </Link>
+
                 </div>
               </DrawerContent>
             </Drawer>
