@@ -28,8 +28,8 @@ export function SidebarMobile(props: SidebarMobileProps) {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button size='icon' variant='ghost' className='fixed top-24 left-3 text-white'>
-          <Menu size={20} />
+        <Button size='icon' variant='ghost' className='fixed top-24 left-3 text-white z-50'>
+          <Menu size={32} className='icon'/>
         </Button>
       </SheetTrigger>
       <SheetContent side='left' className='px-3 py-4'>

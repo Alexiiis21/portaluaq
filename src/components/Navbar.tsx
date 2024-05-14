@@ -1,18 +1,21 @@
-import React from 'react'
+"use client";
+import React from "react";
 import Image from "next/image";
-import { Menu } from 'lucide-react';
+import Modal from "./Modal";
+import { useState } from "react";
+import Link from "next/link";
 
-const Navbar = () => {
+export default function Navbar() {
+
+
   return (
-    <div className="h-24 bg-white text-black flex items-center justify-between p-4 w-full">
-        <div className="flex flex-start ">
+    <div className="fixed top-0 h-24 bg-white text-black flex items-center justify-between p-4 w-full z-50">
+      <div className="flex flex-start ">
         <Image src="/logo.png" alt="logo" width={385} height={71} />
-        </div>
-        <div className="flex justify-end ml-6 md:px-10">
-        <Menu size={32} className='cursor-pointer'/>
-        </div>
       </div>
-  )
-}
-
-export default Navbar
+      <div className="flex justify-end ml-6  md:px-10">
+        <Modal />
+      </div>
+    </div>
+  );
+};

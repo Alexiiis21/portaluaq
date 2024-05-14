@@ -19,8 +19,8 @@ export function SidebarDesktop(props: SidebarDesktopProps) {
   const pathname = usePathname();
 
   return (
-    <aside className='w-[270px] max-w-xs h-[calc(100vh-96px)] fixed left-0 top-24 z-40 border-r bg-white'>
-      <div className='h-full px-3 py-4'>
+    <aside className='w-[270px] max-w-xs h-[calc(100vh-96px)] fixed left-0 top-24 z-0 border-r bg-white'>
+      <div className='h-auto px-3 py-4'>
         <h3 className='mx-3 text-lg font-semibold text-foreground'>PORTAL UAQ</h3>
         <div className='mt-5'>
           <div className='flex flex-col gap-1 w-full'>
@@ -61,9 +61,12 @@ export function SidebarDesktop(props: SidebarDesktopProps) {
                       Configuración
                     </SidebarButton>
                   </Link>
+                  <Link href='/privacidad/login'>
                   <SidebarButton size='sm' icon={LogOut} className='w-full'>
                     Cerrar sesión
                   </SidebarButton>
+                  </Link>
+                  
                 </div>
               </PopoverContent>
             </Popover>

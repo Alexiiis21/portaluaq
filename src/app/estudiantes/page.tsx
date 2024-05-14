@@ -1,16 +1,19 @@
-import { Sidebar } from "@/components/sidebar";
 import React from "react";
+import Generales from "@/components/Generales";
+import Actual from "@/components/Actual";
+import Calificaciones from "@/components/Calificaciones";
+import Restricciones from "@/components/Restricciones";
 
 const page = () => {
   return (
-    <div className="flex items-start justify-center h-[86vh]">
+    <div className="">
       <div>
-        <Sidebar />
+       <Generales />
+      <Actual />
+      <Calificaciones />
+      <Restricciones />
       </div>
-      <div>
-        a
       </div>
-    </div>
   );
 };
 

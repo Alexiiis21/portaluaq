@@ -1,10 +1,11 @@
 import ChooseUser from "@/components/ChooseUser";
 import Image from "next/image";
+import SecondFooter from "@/components/SecondFooter";
 
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="mt-24">
       <div className="flex items-center justify-center">
       <Image src="/portal_ppal.jpg" alt="logo1" width={990} height={300} />
       </div>
@@ -35,6 +36,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <SecondFooter />
     </div>
+    
   ); 
 }

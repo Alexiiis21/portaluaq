@@ -1,11 +1,11 @@
-import { Sidebar } from '@/components/sidebar'
 import React from 'react'
+import  Generales  from '@/components/Generales'
 
 const page = () => {
   return (
     <div>
         <div>
-            <Sidebar />
+        <Generales />
         </div>
     </div>
   )
